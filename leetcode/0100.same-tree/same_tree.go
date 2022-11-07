@@ -1,10 +1,10 @@
 package leetcode
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+import (
+	"crackingleetcode/ds"
+)
+
+type TreeNode = ds.TreeNode
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
